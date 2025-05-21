@@ -21,7 +21,7 @@ export const Projects: React.FC = () => {
       title: "LiveWell Specialists Hospital",
       description: "A comprehensive hospital management system with features for appointment scheduling, patient management, and emergency services. Built with modern web technologies for optimal performance and user experience.",
       category: "fullstack",
-      image: "https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "/livewell-screenshot.png",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
       demoUrl: "https://live-well-specialists.vercel.app/",
       githubUrl: "https://github.com/Harbeyzino/LiveWellSpecialists"
@@ -31,7 +31,7 @@ export const Projects: React.FC = () => {
       title: "EphShop - E-commerce Platform",
       description: "A modern e-commerce platform featuring a responsive design, product catalog, shopping cart, and secure checkout process. Implements best practices for performance and user experience.",
       category: "fullstack",
-      image: "https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "/ephshop-screenshot.png",
       technologies: ["React", "Django", "Python", "PostgreSQL", "Tailwind CSS"],
       demoUrl: "https://ephemeral-ivory.vercel.app/",
       githubUrl: "https://github.com/Harbeyzino/ephemeral"
@@ -41,7 +41,7 @@ export const Projects: React.FC = () => {
       title: "Unicrops Business Solutions",
       description: "A comprehensive business services platform with user and admin dashboards, appointment booking system, and various business growth services. Built with Django framework for robust backend functionality.",
       category: "fullstack",
-      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      image: "/unicrops-screenshot.png",
       technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
       demoUrl: "https://unicrops.onrender.com",
       githubUrl: "https://github.com/Harbeyzino/Unicrops"
