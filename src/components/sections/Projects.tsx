@@ -35,6 +35,16 @@ export const Projects: React.FC = () => {
       technologies: ["React", "Django", "Python", "PostgreSQL", "Tailwind CSS"],
       demoUrl: "https://ephemeral-ivory.vercel.app/",
       githubUrl: "https://github.com/Harbeyzino/ephemeral"
+    },
+    {
+      id: 3,
+      title: "Unicrops Business Solutions",
+      description: "A comprehensive business services platform with user and admin dashboards, appointment booking system, and various business growth services. Built with Django framework for robust backend functionality.",
+      category: "fullstack",
+      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
+      demoUrl: "https://unicrops.onrender.com",
+      githubUrl: "https://github.com/Harbeyzino/Unicrops"
     }
   ];
   
@@ -78,7 +88,7 @@ export const Projects: React.FC = () => {
           ))}
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map(project => (
             <div 
               key={project.id} 
