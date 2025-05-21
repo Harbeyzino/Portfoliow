@@ -18,51 +18,29 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Enterprise Resource Planning System",
-      description: "A comprehensive ERP solution built with microservices architecture, handling inventory, HR, and financial operations for medium to large enterprises.",
-      category: "backend",
-      image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker"],
-      demoUrl: "#",
-      githubUrl: "#"
+      title: "LiveWell Specialists Hospital",
+      description: "A comprehensive hospital management system with features for appointment scheduling, patient management, and emergency services. Built with modern web technologies for optimal performance and user experience.",
+      category: "fullstack",
+      image: "https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
+      demoUrl: "https://live-well-specialists.vercel.app/",
+      githubUrl: "https://github.com/Harbeyzino/LiveWellSpecialists"
     },
     {
       id: 2,
-      title: "Real-time Analytics Dashboard",
-      description: "A scalable analytics platform processing millions of events daily, providing real-time insights through interactive visualizations.",
+      title: "EphShop - E-commerce Platform",
+      description: "A modern e-commerce platform featuring a responsive design, product catalog, shopping cart, and secure checkout process. Implements best practices for performance and user experience.",
       category: "fullstack",
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["React", "Python", "Apache Kafka", "Elasticsearch", "AWS"],
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 3,
-      title: "AI-Powered Code Review Tool",
-      description: "An automated code review system using machine learning to detect potential bugs, security vulnerabilities, and suggest improvements.",
-      category: "ai",
-      image: "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Python", "TensorFlow", "FastAPI", "MongoDB", "Docker"],
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      id: 4,
-      title: "Distributed Task Scheduler",
-      description: "A robust task scheduling system supporting distributed computing environments with fault tolerance and load balancing.",
-      category: "backend",
-      image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      technologies: ["Go", "gRPC", "etcd", "Kubernetes", "Prometheus"],
-      demoUrl: "#",
-      githubUrl: "#"
+      image: "https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      technologies: ["React", "Django", "Python", "PostgreSQL", "Tailwind CSS"],
+      demoUrl: "https://ephemeral-ivory.vercel.app/",
+      githubUrl: "https://github.com/Harbeyzino/ephemeral"
     }
   ];
   
   const categories = [
     { id: 'all', name: 'All Projects' },
-    { id: 'fullstack', name: 'Full Stack' },
-    { id: 'backend', name: 'Backend' },
-    { id: 'ai', name: 'AI & ML' }
+    { id: 'fullstack', name: 'Full Stack' }
   ];
   
   const filteredProjects = activeFilter === 'all' 
@@ -81,7 +59,7 @@ export const Projects: React.FC = () => {
         </h2>
         <div className="h-1 w-20 bg-blue-600 dark:bg-blue-400 mx-auto mb-8"></div>
         <p className="text-center text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
-          Showcasing my expertise in software engineering through complex, scalable solutions.
+          Showcasing my expertise in software engineering through real-world applications.
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-12">
