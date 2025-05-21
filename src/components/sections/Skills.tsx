@@ -9,24 +9,23 @@ interface Skill {
 export const Skills: React.FC = () => {
   const skills: Skill[] = [
     // Frontend Skills
-    { name: 'HTML/CSS', level: 95, category: 'frontend' },
-    { name: 'JavaScript', level: 90, category: 'frontend' },
-    { name: 'React', level: 92, category: 'frontend' },
+    { name: 'React', level: 90, category: 'frontend' },
     { name: 'TypeScript', level: 85, category: 'frontend' },
-    { name: 'Tailwind CSS', level: 88, category: 'frontend' },
+    { name: 'Vite', level: 88, category: 'frontend' },
+    { name: 'Tailwind CSS', level: 92, category: 'frontend' },
     
     // Backend Skills
-    { name: 'Node.js', level: 85, category: 'backend' },
-    { name: 'Express', level: 82, category: 'backend' },
-    { name: 'MongoDB', level: 80, category: 'backend' },
-    { name: 'PostgreSQL', level: 78, category: 'backend' },
-    { name: 'GraphQL', level: 75, category: 'backend' },
+    { name: 'Django', level: 85, category: 'backend' },
+    { name: 'Python', level: 88, category: 'backend' },
+    { name: 'Node.js', level: 82, category: 'backend' },
+    { name: 'GraphQL', level: 80, category: 'backend' },
+    { name: 'PostgreSQL', level: 85, category: 'backend' },
     
     // Tools & Others
     { name: 'Git/GitHub', level: 88, category: 'tools' },
-    { name: 'Docker', level: 70, category: 'tools' },
-    { name: 'AWS', level: 65, category: 'tools' },
-    { name: 'Figma', level: 75, category: 'tools' },
+    { name: 'Docker', level: 75, category: 'tools' },
+    { name: 'AWS', level: 70, category: 'tools' },
+    { name: 'CI/CD', level: 78, category: 'tools' },
     { name: 'Testing', level: 80, category: 'tools' },
   ];
 

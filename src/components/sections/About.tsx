@@ -18,7 +18,7 @@ export const About: React.FC = () => {
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transform hover:scale-[1.01] transition-transform duration-300">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                Hello! I'm <strong className="text-blue-600 dark:text-blue-400">Olaniyan Abiodun</strong>, a passionate web developer 
+                Hello! I'm <strong className="text-blue-600 dark:text-blue-400">Olaniyan Abiodun</strong>, a passionate software engineer 
                 with a keen eye for design and a commitment to creating exceptional digital experiences.
               </p>
               
@@ -42,8 +42,8 @@ export const About: React.FC = () => {
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Education</h3>
                   <ul className="space-y-2">
                     <li className="flex flex-col">
-                      <span className="font-medium text-gray-800 dark:text-white">BSc Computer Science</span>
-                      <span className="text-gray-600 dark:text-gray-400">University of Technology</span>
+                      <span className="font-medium text-gray-800 dark:text-white">HND Biochemical Technology</span>
+                      <span className="text-gray-600 dark:text-gray-400">Yaba College of Technology</span>
                       <span className="text-gray-500 dark:text-gray-500">2016 - 2020</span>
                     </li>
                   </ul>
@@ -53,12 +53,12 @@ export const About: React.FC = () => {
                   <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">Experience</h3>
                   <ul className="space-y-2">
                     <li className="flex flex-col">
-                      <span className="font-medium text-gray-800 dark:text-white">Senior Web Developer</span>
+                      <span className="font-medium text-gray-800 dark:text-white">Senior Software Engineer</span>
                       <span className="text-gray-600 dark:text-gray-400">TechSolutions Inc.</span>
                       <span className="text-gray-500 dark:text-gray-500">2021 - Present</span>
                     </li>
                     <li className="flex flex-col">
-                      <span className="font-medium text-gray-800 dark:text-white">Frontend Developer</span>
+                      <span className="font-medium text-gray-800 dark:text-white">Software Engineer</span>
                       <span className="text-gray-600 dark:text-gray-400">Digital Innovations</span>
                       <span className="text-gray-500 dark:text-gray-500">2019 - 2021</span>
                     </li>
