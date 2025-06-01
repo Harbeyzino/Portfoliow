@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
+import { Mail, MapPin, Send, Linkedin, Github, Twitter, } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,36 +17,36 @@ export const Contact: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus('idle');
-      }, 5000);
-    }, 1500);
+    setSubmitStatus('idle');
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    }
+    setIsSubmitting(false);
   };
   
   const contactInfo = [
     { 
       icon: <Mail className="text-blue-600 dark:text-blue-400" />, 
       title: 'Email', 
-      value: 'olaniyan.abiodun@example.com',
-      href: 'mailto:olaniyan.abiodun@example.com'
+      value: 'abbeyzino51@gmail.com',
+      href: 'mailto:abbeyzino51@gmail.com'
     },
-    { 
-      icon: <Phone className="text-blue-600 dark:text-blue-400" />, 
-      title: 'Phone', 
-      value: '+123 456 7890',
-      href: 'tel:+1234567890'
-    },
+    
     { 
       icon: <MapPin className="text-blue-600 dark:text-blue-400" />, 
       title: 'Location', 
@@ -56,10 +56,9 @@ export const Contact: React.FC = () => {
   ];
   
   const socialLinks = [
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
-    { icon: <Github size={20} />, href: '#', label: 'GitHub' },
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter' },
-    { icon: <Instagram size={20} />, href: '#', label: 'Instagram' }
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/olaniyan-abiodun-959974298/', label: 'LinkedIn' },
+    { icon: <Github size={20} />, href: 'https://github.com/Harbeyzino', label: 'GitHub' },
+    { icon: <Twitter size={20} />, href: 'https://www.screenshotmachine.com/', label: 'Twitter' },
   ];
 
   return (

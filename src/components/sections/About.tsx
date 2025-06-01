@@ -54,13 +54,13 @@ export const About: React.FC = () => {
                   <ul className="space-y-2">
                     <li className="flex flex-col">
                       <span className="font-medium text-gray-800 dark:text-white">Senior Software Engineer</span>
-                      <span className="text-gray-600 dark:text-gray-400">TechSolutions Inc.</span>
-                      <span className="text-gray-500 dark:text-gray-500">2021 - Present</span>
+                      <span className="text-gray-600 dark:text-gray-400">Unicorps Solution</span>
+                      <span className="text-gray-500 dark:text-gray-500">2023 - Present</span>
                     </li>
                     <li className="flex flex-col">
                       <span className="font-medium text-gray-800 dark:text-white">Software Engineer</span>
                       <span className="text-gray-600 dark:text-gray-400">Digital Innovations</span>
-                      <span className="text-gray-500 dark:text-gray-500">2019 - 2021</span>
+                      <span className="text-gray-500 dark:text-gray-500">2021 - 2023</span>
                     </li>
                   </ul>
                 </div>

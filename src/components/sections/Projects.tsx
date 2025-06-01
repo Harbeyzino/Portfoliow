@@ -18,30 +18,40 @@ export const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "LiveWell Specialists Hospital",
+      title: "Dabi Production LTD",
+      description: "A corporate website for Dabi Production LTD, featuring company profile, product showcase, and contact forms. Built for optimal performance and modern user experience.",
+      category: "fullstack",
+      image: "https://i.postimg.cc/tCM8yq50/Dabi-Packaging-Ltd-Website-06-01-2025-05-39-PM.png",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+      demoUrl: "https://packitbrandit.vercel.app/",
+      githubUrl: "https://github.com/Harbeyzino/packitbrandit"
+    },
+    {
+      id: 2,
+      title: "LiveWell Multi-Specialists Hospital",
       description: "A comprehensive hospital management system with features for appointment scheduling, patient management, and emergency services. Built with modern web technologies for optimal performance and user experience.",
       category: "fullstack",
-      image: "/livewell-screenshot.png",
+      image: "https://i.postimg.cc/zGttcsWd/live-well-specialists-vercel-app-1024x768desktop-cbcc49.jpg",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL"],
       demoUrl: "https://live-well-specialists.vercel.app/",
       githubUrl: "https://github.com/Harbeyzino/LiveWellSpecialists"
     },
     {
-      id: 2,
+      id: 3,
       title: "EphShop - E-commerce Platform",
       description: "A modern e-commerce platform featuring a responsive design, product catalog, shopping cart, and secure checkout process. Implements best practices for performance and user experience.",
       category: "fullstack",
-      image: "/ephshop-screenshot.png",
+      image: "https://i.postimg.cc/CMtmk3kY/ephemeral-ivory-vercel-app-1024x768desktop-db4173.jpg",
       technologies: ["React", "Django", "Python", "PostgreSQL", "Tailwind CSS"],
       demoUrl: "https://ephemeral-ivory.vercel.app/",
       githubUrl: "https://github.com/Harbeyzino/ephemeral"
     },
     {
-      id: 3,
+      id: 4,
       title: "Unicrops Business Solutions",
       description: "A comprehensive business services platform with user and admin dashboards, appointment booking system, and various business growth services. Built with Django framework for robust backend functionality.",
       category: "fullstack",
-      image: "/unicrops-screenshot.png",
+      image: "https://i.postimg.cc/zvPKLPtB/unicrops-onrender-com-1024x768desktop-7adf78.jpg",
       technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
       demoUrl: "https://unicrops.onrender.com",
       githubUrl: "https://github.com/Harbeyzino/Unicrops"

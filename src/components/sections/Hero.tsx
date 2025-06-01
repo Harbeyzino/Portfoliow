@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
             {/* Social Links */}
             <div className="flex items-center gap-4 mb-8 animate-fadeIn animation-delay-500">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/Harbeyzino" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
@@ -36,7 +36,7 @@ export const Hero: React.FC = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://www.linkedin.com/in/olaniyan-abiodun-959974298/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="https://twitter.com/yourusername" 
+                href="https://x.com/dev_abyte" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-300"
